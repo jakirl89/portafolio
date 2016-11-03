@@ -1,0 +1,8 @@
+@function calcPercent($target, $context){
+	@return ($target/$context) * 100%;
+}
+
+@function calcEm($target, $context){
+	@return ($target/$context) * 1em;
+}
+

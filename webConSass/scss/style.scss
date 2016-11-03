@@ -1,0 +1,279 @@
+@import 'reset', 'functions', 'variables';
+
+.container,
+header,
+header div,
+.navPrincipal,
+.navPrincipal ul,
+.banner,
+section,
+.navSub,
+.article,
+.article2,
+form,
+fieldset,
+.listFooter1,
+.listFooter2,
+.lastFooter,
+ {
+
+		&:after {
+		
+			content: "";
+			display: table;
+			clear: both;
+	}
+}
+
+body{
+	font: calcEm($baseFont, 16px) arial;
+	padding-bottom: calcEm(20px, $baseFont);
+	background-image: url("../img/layout/backgroundConteiner.jpg");
+	color:$grey;
+}
+
+.container{
+  max-width:calcEm(1036px, $baseFont);
+	margin: calcEm(30px, $baseFont) auto;	
+}
+
+
+
+
+/*****************************************header********************************************/
+
+header{
+  background-image: url("../img/layout/backgroundHeader.jpg");
+  margin-bottom:calcEm(60px, $baseFont);
+}
+
+footer{
+  background-image: url("../img/layout/backgroundFooter.jpg");
+}
+
+
+header a img{
+ float:left; 
+}
+
+
+header div{
+ margin-bottom:calcEm(60px, $baseFont);
+}
+
+.navPrincipal{
+ width:calcPercent(500px, $maxWidth);
+ float:right;
+ margin-right:calcPercent(100px, $maxWidth);
+}
+
+.navPrincipal li{
+ list-style-type:none;
+ float:left; 
+ margin-right:calcPercent(25px, $maxWidth);
+}
+
+
+.navPrincipal a{
+ text-decoration:none;
+ color:$white;
+ font-size:calcEm(22px, $baseFont);
+ display:block;
+}
+
+.banner img{
+	float:left;
+	margin-right:calcEm(140px, $baseFont);
+	margin-left:calcPercent(40px, $maxWidth);
+}
+
+.banner{
+	margin-bottom:calcEm(20px, $baseFont);
+}
+
+.banner h1{
+ font-size:calcEm(64px, $baseFont);
+ color:$white;
+}
+
+.banner p{
+ font-size:calcEm(44px, $baseFont);
+ color:$white;
+ margin-bottom:calcEm(30px, $baseFont);
+}
+
+.banner button{
+ font-size:calcEm(22px, $baseFont);
+ padding:calcEm(10px, $baseFont) calcPercent(20px, $maxWidth);
+ color:$white;
+ background-color:$green;
+ border:calcEm(5px, $baseFont) solid #1c292e;
+border-radius:calcEm(5px, $baseFont);
+ }
+
+ 
+
+/*****************************************main********************************************/
+
+
+
+.navSub{
+ float:right;
+ margin-bottom:0;
+}
+
+.navSub li{
+list-style-type: none;
+float: left;
+width: calcPercent(227px, $maxWidth);
+height: calcEm(300px, $baseFont);
+padding:calcEm(10px, $baseFont) calcPercent(10px, $maxWidth);
+margin-right:calcPercent(10px, $maxWidth);
+}
+
+.navSub li:hover {
+border: 0.06711em solid #ccc;
+border-radius:calcEm(5px, $baseFont);
+}
+
+.navSub a{
+ text-decoration:none;
+ color:$grey;
+ font-size:calcEm(26px, $baseFont);
+ display:block;
+}
+
+.navSub img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.navSub a{
+text-align: center ;
+}
+
+.article h1{
+font-size:calcEm(38px, $baseFont);
+color:$greyLight;
+}
+
+.article, .article2, .navSub {
+margin-bottom:calcEm(84px, $baseFont);
+}
+
+.article2 img{
+float:left;
+margin-right:calcPercent(45px, $maxWidth);
+}
+
+.imgMetro{
+ box-shadow: 10px 10px 10px rgba(0,0,0,0.3);
+}
+
+.img{
+ width:100%;
+ height:auto;
+}
+
+.article2 ul{
+ width:calcPercent(500px, $maxWidth);
+ float:left;
+}
+
+.article2 li{
+ list-style-image:url("../img/layout/bulletCheck.jpg");
+ margin: calcEm(18px, $baseFont);
+}
+
+.article2 h1{
+ margin: calcEm(10px, $baseFont);
+ font-size: calcEm(32px, $baseFont);
+}
+
+.article2 a, .listFooter1 a, .listFooter2 a{
+text-decoration:none;
+margin-right:calcPercent(45px, $maxWidth);
+color:$grey;
+}
+
+.listFooter1 li, .listFooter2 li{
+list-style-type:none;
+}
+
+.article img{
+display: block;
+margin:0 auto calcEm(27px, $baseFont) auto;
+}
+
+section .article{
+margin-bottom:calcEm(23px, $baseFont);;
+}
+
+.article p, .article{
+font-size: 1.00671em;
+margin-bottom: 1.54362em;
+width: 100.58301%;
+margin: 1.81208em auto;
+}
+
+fieldset{
+border: 0;
+width: calcPercent(466px, $maxWidth);
+float: left;
+padding-bottom:calcEm(34px, $baseFont);
+margin-bottom: calcEm(41px, $baseFont);
+padding-left:calcPercent(17px, $maxWidth);
+padding-top: calcPercent(15px, $maxWidth);
+border-radius:calcEm(5px, $baseFont);
+}
+
+form fieldset:first-child{
+background-color:$orange;
+margin-right:calcPercent(60px, $maxWidth);	
+}
+
+#inputs button{
+background-color:$greyBlack;
+border:0px;
+padding:calcEm(5px, $baseFont) calcPercent(20px, $maxWidth);
+color:$white;
+}
+
+#actions button{
+background-color:$blueBlack;
+border:0px;
+padding:calcEm(5px, $baseFont) calcPercent(20px, $maxWidth);
+color:$white;
+}
+
+form fieldset:last-child{
+background-color:#01d4f3;
+}
+
+legend{
+display: block;
+padding-top: calcEm(41px, $baseFont);
+color: $white;
+}
+
+footer div{
+display:inline;
+float:left;
+font-size:calcEm(13px, $baseFont);
+margin-right:calcPercent(52px, $maxWidth);
+}
+
+footer img{
+float:left;
+}
+
+.lastFooter{
+width:calcPercent(320px, $maxWidth);
+float:left;
+}
+
+footer div h1{
+font-size:calcEm(22px, $baseFont);
+}
+

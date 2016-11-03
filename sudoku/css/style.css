@@ -1,0 +1,144 @@
+
+body,div,img,h1,h3{
+	margin:0;
+	padding:0
+}
+
+.cf:before,
+.cf:after { 
+	content: " ";  
+	display: table; 
+}
+
+.cf:after { 
+	clear: both;
+}
+body{
+	background-color:#cbc2a5;
+}
+
+.content{
+	width:960px;
+	margin:0 auto;
+}
+
+.contenedorPrincipal{
+	width:385px;
+	margin:5px 246px;
+	padding:20px;
+	font-family:Loved by the King;
+	float:left;
+	background-color:#46b5a4;
+}
+
+.cajaContenedoraInput{
+	float:left;
+	width: 126px;
+	margin: 1px;
+}
+
+h1{
+	text-align:center;
+	color:#ffffff;
+}
+input{
+	width:40px;
+	height:40px;
+	background-color:#46b5a4;
+	float:left;
+	border:1px solid #39362e;
+	font-size:20px;
+	text-align:center;
+}
+
+.inputError{
+	background-color:red;
+	color:white;
+}
+
+.quitarColorError{
+	background-color:#46b5a4;
+	color:black;
+}
+
+.formularioBienvenida{
+	width:378px;
+}
+
+.formularioBienvenida legend{
+	font-size:20px;
+	text-align:center;
+	font-family:Loved by the King;
+}
+
+.formularioBienvenida input{
+	width:216px;
+	height:20px;
+	background-color:white;
+	text-align:left;
+	font-size:16px;
+	line-height:16px;
+	font-family:arial;
+	float:right;
+}
+
+.formularioBienvenida label{
+	float:left;
+	font-size:16px;
+	font-family:arial;
+}
+
+#lblError{
+	color:red;
+	display:block;
+}
+
+
+#btnIngresar{
+	background-color:black;
+	color:white;
+	font-family:Loved by the King;
+	width:100px;
+	padding:20px;
+	line-height:3px;
+	border:none;
+}
+
+#btnIngresar:hover{
+	background-color:orange;
+	border:none;
+}
+
+.seleccionarNivelJuego{
+	width:196px;
+	float:right;
+}
+
+#radio{
+	width:100px;
+}
+
+.pintarPistas{
+	color:blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
